@@ -1,0 +1,11 @@
+2022/06/15 14:56:16 [error] 17428#10664: *1 CreateFile() "C:\Users\UsuarioDVG\Desktop\nginx-1.21.6/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2022/06/15 15:33:05 [emerg] 5228#22056: unexpected "}" in E:\servidores node\nginx-1.21.6/conf/nginx.conf:54
+2022/06/16 16:53:59 [emerg] 12592#15568: unexpected "}" in C:\Users\UsuarioDVG\Desktop\servidores node\nginx-1.21.6/conf/nginx.conf:54
+2022/06/16 16:59:14 [emerg] 11884#11744: unexpected "}" in C:\Users\UsuarioDVG\Desktop\servidores node\nginx-1.21.6/conf/nginx.conf:54
+2022/06/16 17:07:40 [emerg] 8316#11236: unexpected "}" in C:\Users\UsuarioDVG\Desktop\servidores node\nginx-1.21.6/conf/nginx.conf:54
+2022/06/16 17:18:56 [emerg] 7588#9816: unexpected "}" in C:\Users\UsuarioDVG\Desktop\servidores node\nginx-1.21.6/conf/nginx.conf:54
+2022/06/16 17:20:29 [notice] 9420#11768: signal process started
+2022/06/16 17:20:29 [error] 9420#11768: OpenEvent("Global\ngx_reload_21400") failed (2: The system cannot find the file specified)
+2022/06/16 17:21:17 [notice] 11928#1752: signal process started
+2022/06/16 17:21:33 [error] 3880#6844: *1 CreateFile() "C:\Users\UsuarioDVG\Desktop\servidores node\nginx-1.21.6/../src/views/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/info/"
+2022/06/16 17:28:30 [notice] 4168#10608: signal process started

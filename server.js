@@ -26,7 +26,10 @@ const script = require('bcrypt')
 const saltRounds = 10;
 const cluster = require('cluster')
 const CPUs = require('os').cpus().length
+
+
 const modo = process.argv[2] || 'fork'
+const PORT = process.argv[3] || 8080
 
 const MongoStore = require('connect-mongo')
 const Usuario = require('./daos/userDaos')
@@ -40,8 +43,8 @@ const app = express()
 const httpServer = new HttpServer(app)
 const io = new IOServer(httpServer)
 
-const opciones = {default: {port: 8080}}
-const {port: parPort} = parseArgs(process.argv.splice(2), opciones )
+// const opciones = {default: {port: 8080}}
+// const {port: parPort} = parseArgs(process.argv.splice(2), opciones )
 
 
 let messages = []
@@ -64,7 +67,7 @@ if (modo === 'cluster' && cluster.isPrimary)
 }else 
 {
   /* Server Listen */
-  const PORT = parPort
+  //const PORT = parPort
   const server = httpServer.listen(PORT , () => console.log(`servidor Levantado ${PORT}`))
   server.on('error', (error) => console.log(`Error en servidor ${error}`))
 
