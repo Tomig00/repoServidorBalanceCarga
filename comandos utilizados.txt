@@ -1,0 +1,27 @@
+Comandos a utilizar:
+
+--port -> número del puerto del servidor.
+--mode -> cluster / fork 
+
+
+Ejecutar el servidor (modos FORK y CLUSTER) con nodemon verificando el número de procesos tomados por node:
+
+nodemon server.js fork 8080
+nodemon server.js cluster 8080
+
+
+forever server.js fork 8080
+forever server.js cluster 8080
+
+Listado de procesos con forever: "forever list"
+
+Listado de procesos:  'tasklist /fi "imagename eq node.exe"'
+
+
+Ejecutar el servidor (con los parámetros adecuados: modo FORK) utilizando PM2 en sus modos modo fork y cluster. Listar los procesos por PM2 y por sistema operativo.
+
+Modo fork:
+pm2 start server.js --name="server1" --watch -- fork 8080
+
+Modo cluster:
+pm2 start server.js --name="server1" --watch -i max -- cluster 8080
